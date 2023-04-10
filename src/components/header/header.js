@@ -6,7 +6,8 @@ import Logo from 'components/logo';
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobileDrawer';
 import menuItems from './header.data';
-import logoDark from 'assets/logo-dark.svg';
+/*import logoDark from 'assets/logo-dark.svg';*/
+import logoDark from 'assets/logobg.png';
 
 
 export default function Header({ className }) {
@@ -14,7 +15,7 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className}>
         <Container sx={styles.container}>
-          <Logo image={logoDark} />
+          <Logo image={logoDark}/>
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
@@ -50,7 +51,7 @@ export default function Header({ className }) {
 
 const styles = {
   headerBtn: {
-    backgroundColor: 'black',
+    backgroundColor: '#5e548e',
     fontSize: '25px',
     fontWeight: 'bold',
     letterSpacing: '-0.16px',
@@ -97,7 +98,7 @@ const styles = {
     },
     navLink: {
       fontSize: '16px',
-      color: '#02073E',
+      color: '#edede9',
       fontWeight: '400',
       cursor: 'pointer',
       lineHeight: '1.2',

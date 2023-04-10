@@ -5,6 +5,7 @@ import Sticky from 'react-stickynode';
 import { useStickyState } from 'contexts/app/app.provider';
 import { Waypoint } from 'react-waypoint';
 import { useStickyDispatch } from 'contexts/app/app.provider';
+import bg from 'assets/bg.svg'
 
 import Header from './header/header';
 import Footer from './footer/footer';
@@ -38,13 +39,21 @@ export default function Layout({ children }) {
         onPositionChange={onWaypointPositionChange}
       />
       <main
-        sx={{
-          variant: 'layout.main',
-        }}
+        sx={styles.image}
       >
         {children}
       </main>
       <Footer />
     </React.Fragment>
   );
+}
+
+
+const styles = {
+  image: {
+    background: 'transparent',
+    variant: 'layout.main',
+    width: '100%',
+    height: '100%',
+  }
 }

@@ -14,7 +14,7 @@ const SERVICES_DATA = [
     image: serviceImage1,
     text:
       'we give you the opportunity to be visible and accessible online, where you can be found by people all over the world, 24 hours a day, 7 days a week..',
-    heading: 'Web Site',
+    heading: 'WebSite',
     path: '#',
   },
   {
@@ -28,20 +28,20 @@ const SERVICES_DATA = [
     image: serviceImage3,
     text:
       'Mobile applications can be an effective tool for marketing and customer engagement, using features such as push notifications, loyalty programs, satisfaction surveys, etc.',
-    heading: 'mobile app',
+    heading: 'Mobile app',
     path: '#',
   },
   {
     image: serviceImage4,
     text:
       'Websites and mobile applications must evolve to meet the needs of users, businesses and emerging technologies. ',
-    heading: 'maintenance',
+    heading: 'Maintenance',
     path: '#',
   },
   {
     image: serviceImage5,
     text:
-      'office applications tailored to your business.',
+      'Office applications tailored to your business.',
     heading: 'Office applications',
     path: '#',
   },

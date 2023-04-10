@@ -10,6 +10,8 @@ export default function Logo({ image }) {
         variant: 'links.logo',
         display: 'flex',
         alignItems: 'center',
+        width: 150,
+        height: 120,
       }}
     >
       <Image src={image} alt="DevOne Consulting" />
