@@ -10,6 +10,8 @@ import bannerIcon4 from 'assets/banner-icon-1-4.svg';
 import bannerIcon5 from 'assets/banner-icon-1-5.svg';
 import bannerIcon6 from 'assets/banner-icon-1-6.svg';
 import bannerIcon7 from 'assets/dot-pattern.svg';
+import logoDark from 'assets/logobg.png';
+
 
 const Banner = () => {
   return (
@@ -58,7 +60,9 @@ const Banner = () => {
           src={bannerIcon7}
         />
 
-        <Image sx={styles.logo} src={logoImage} alt="logo image" />
+        <Image sx={styles.logo} src={logoDark} alt="logo image" />
+        {/* <Logo image={logoDark}/> */}
+
         <Heading as="h2">Script for fun</Heading>
         <Image src={bannerImage} sx={styles.bannerImage} alt="banner moc" />
       </Container>
@@ -147,6 +151,7 @@ const styles = {
   },
   logo: {
     display: 'block',
+    width:'200px',
     borderRadius: '50%',
     mx: 'auto',
     boxShadow: '0px 15px 35px rgba(65, 104, 139, 0.12)',

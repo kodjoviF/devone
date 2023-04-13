@@ -97,7 +97,7 @@ const styles = {
       display: 'none',
     },
     navLink: {
-      fontSize: '16px',
+      fontSize: '30px',
       color: '#edede9',
       fontWeight: '400',
       cursor: 'pointer',
