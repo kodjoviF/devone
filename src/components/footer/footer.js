@@ -28,7 +28,7 @@ export default function Footer() {
               mt: ['10px', null, null, null, null, '0'],
             }}
           >
-            Copyright by {new Date().getFullYear()} DevOne Consulting 2023
+            Copyright by {new Date().getFullYear()} DevOne Consulting
           </Text>
         </Box>
         <Box sx={styles.linksWrap}>
