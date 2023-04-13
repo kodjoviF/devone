@@ -36,7 +36,7 @@ export default function Header({ className }) {
 
           <Link
             path="/"
-            ml={2}
+            ml={4}
             label="Contact Us"
             sx={styles.headerBtn}
             variant="buttons.primary"
@@ -77,9 +77,10 @@ const styles = {
     transition: 'all 0.4s ease',
 
     '&.sticky': {
-      backgroundColor: 'background',
+      backgroundColor: '#3a0ca3',
+      opacity: 0.9,
       color: 'text',
-      py: '15px',
+      py: '0px',
       boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
     },
   },
@@ -97,7 +98,7 @@ const styles = {
       display: 'none',
     },
     navLink: {
-      fontSize: '30px',
+      fontSize: '20px',
       color: '#edede9',
       fontWeight: '400',
       cursor: 'pointer',

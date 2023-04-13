@@ -32,6 +32,7 @@ export default CallToAction;
 
 const styles = {
   callToAction: {
+    backgroundColor: '#3a0ca3',
     mt: ['-90px', null, null, null, '0'],
     py: ['50px', null, null, null, '110px', null, '140px'],
   },
@@ -53,7 +54,7 @@ const styles = {
       lineHeight: 1,
     },
     h3: {
-      color: '#0F2137',
+      color: 'white',
       fontWeight: 700,
       fontSize: ['23px', null, null, null, '30px', '36px', '44px'],
       maxWidth: ['100%', null, null, null, null, '90%', '100%'],
@@ -63,7 +64,7 @@ const styles = {
       mb: '30px',
     },
     p: {
-      color: '#02073E',
+      color: 'white',
       fontSize: ['16px', null, null, '18px'],
       lineHeight: ['2', null, null, 2.33],
       mb: '30px',
