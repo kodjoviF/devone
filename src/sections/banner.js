@@ -64,7 +64,7 @@ const Banner = () => {
         {/* <Logo image={logoDark}/> */}
 
         <Heading as="h2">Script for fun</Heading>
-        <Image src={bannerImage} sx={styles.bannerImage} alt="banner moc" />
+        <Image src={bannerImage} sx={styles.bannerImage} alt="DevOne consulting" />
       </Container>
     </Box>
   );
