@@ -3,6 +3,7 @@ import { Box, Container, Image, Heading } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import logoImage from 'assets/banner-logo.png';
 import bannerImage from 'assets/banner-mockup.png';
+import bannerImages from 'assets/glob.jpg';
 import bannerIcon1 from 'assets/banner-icon-1-1.svg';
 import bannerIcon2 from 'assets/banner-icon-1-2.svg';
 import bannerIcon3 from 'assets/banner-icon-1-3.svg';
@@ -60,11 +61,11 @@ const Banner = () => {
           src={bannerIcon7}
         />
 
-        <Image sx={styles.logo} src={logoDark} alt="logo image" />
+        <Image sx={styles.logo} src={logoImage} alt="logo image" />
         {/* <Logo image={logoDark}/> */}
 
         <Heading as="h2">Script for fun</Heading>
-        <Image src={bannerImage} sx={styles.bannerImage} alt="DevOne consulting" />
+        <Image src={bannerImages} sx={styles.bannerImage} alt="DevOne consulting" />
       </Container>
     </Box>
   );
@@ -134,13 +135,14 @@ const bannerAnim3 = keyframes`
 const styles = {
   banner: {
     overflow: 'hidden',
-    backgroundColor: '#F9FBFD',
+    backgroundColor: '#3a0ca3',
     textAlign: 'center',
     pt: ['110px', null, null, null, '130px'],
+    py: '25px',
     h2: {
       fontSize: ['28px', null, null, '32px', '38px', '48px', '64px'],
       lineHeight: 1.25,
-      color: '#02073E',
+      color: '#FFF',
       fontWeight: 700,
       width: '100%',
       maxWidth: ['100%', null, null, '55%', '500px', '640px', '851px'],
@@ -148,10 +150,12 @@ const styles = {
       mt: '30px',
       mb: ['40px', null, null, '65px'],
     },
+
   },
   logo: {
     display: 'block',
-    width:'200px',
+    width:'100px',
+    height:'100px',
     borderRadius: '50%',
     mx: 'auto',
     boxShadow: '0px 15px 35px rgba(65, 104, 139, 0.12)',
@@ -161,6 +165,7 @@ const styles = {
     mx: 'auto',
     position: 'relative',
     maxWidth: ['100%', null, null, '80%', null, '100%'],
+    borderRadius: '15px',
   },
   container: {
     position: 'relative',

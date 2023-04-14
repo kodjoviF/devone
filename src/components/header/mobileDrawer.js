@@ -7,7 +7,7 @@ import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link as ScrollLink } from 'react-scroll';
 import menuItems from './header.data';
 import Logo from 'components/logo';
-import logoDark from 'assets/logo-dark.svg';
+import logoDark from 'assets/logobg.png';
 
 const MobileDrawer = () => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -24,7 +24,7 @@ const MobileDrawer = () => {
       width="320px"
       drawerHandler={
         <Box sx={styles.handler}>
-          <IoMdMenu size="22px" />
+          <IoMdMenu size="22px" color='#fff'/>
         </Box>
       }
       open={state.isOpen}

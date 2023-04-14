@@ -60,7 +60,7 @@ const Featured = () => {
               className={`${tab.active === 'adjust' ? 'active' : ''}`}
             >
               <FaCog />
-              Create & adjust
+              Adjust
             </Button>
             <Button
               onClick={() => handleTab('report')}
@@ -74,7 +74,7 @@ const Featured = () => {
               className={`${tab.active === 'create' ? 'active' : ''}`}
             >
               <FaBriefcase />
-              Create & adjust
+              Create
             </Button>
           </Box>
         </Box>
@@ -141,20 +141,22 @@ const styles = {
       fontSize: ['14px', null, null, null, '18px'],
       fontWeight: 500,
       lineHeight: 1,
+      opacity: 0.7,
       position: 'relative',
       transition: 'all 500ms ease',
       svg: {
         fontSize: ['18px', null, null, null, '30px'],
-        color: '#ADBDD0',
+        color: '#0F2137',
         opacity: 0.7,
         mr: '15px',
         transition: 'all 500ms ease',
       },
       '&:hover, &.active': {
         backgroundColor: 'rgba(0,0,0,0)',
-        color: '#0F2137',
+        color: 'primary',
+        opacity: 1,
         svg: {
-          color: '#0F2137',
+          color: 'primary',
           opacity: 1,
         },
         '&::before': {
@@ -165,7 +167,7 @@ const styles = {
         content: "''",
         position: 'absolute',
         bottom: '-2px',
-        backgroundColor: '#0F2137',
+        backgroundColor: 'primary',
         left: 0,
         width: '100%',
         height: '3px',
