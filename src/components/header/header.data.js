@@ -12,8 +12,8 @@ export default [
     label: 'Pricing',
   },
   {
-    path: 'testimonials',
-    label: 'Testimonials',
+    path: 'faq',
+    label: 'FAQ',
   },
   
 ];

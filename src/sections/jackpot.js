@@ -27,7 +27,7 @@ const Jackpot = () => {
       <Container>
         <Flex sx={styles.flex}>
           <Box sx={styles.image}>
-            <Image src={jackpotImage} alt="jackpot image" />
+            <Image src={jackpotImage} alt="jackpot image" sx={{  }} />
           </Box>
           <Box sx={styles.content}>
             <Box sx={styles.heading}>
@@ -58,13 +58,20 @@ const styles = {
     pt: ['65px', null, null, null, '85px', null, '125px'],
   },
   flex: {
+    direction: 'flex',
     flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    mb: '10%',
   },
   image: {
-    flex: ['0 0 50%', null, null, null, null, '0 0 62.5%'],
+    flex: ['0 0 50%', null, null, null, null, '0 0 40%'],
+    mx: '10%',
+    borderRadius: '5%',
     img: {
-      maxWidth: ['100%', null, null, null, null, null, 'none'],
+      maxWidth: ['100%', null, null, null, null, null, '200%'],
       float: 'right',
+      borderRadius: '5%',
     },
   },
   content: {

@@ -34,13 +34,10 @@ export default function Header({ className }) {
             ))}
           </Flex>
 
-          <Link
-            path="/"
-            ml={4}
-            label="Contact Us"
+          <a 
+            href={`tel:+22891592659`} 
             sx={styles.headerBtn}
-            variant="buttons.primary"
-          />
+          >Contact Us</a>
 
           <MobileDrawer />
         </Container>
@@ -51,8 +48,8 @@ export default function Header({ className }) {
 
 const styles = {
   headerBtn: {
-    backgroundColor: '#5e548e',
-    fontSize: '25px',
+    backgroundColor: '#331E7F',
+    fontSize: '20px',
     fontWeight: 'bold',
     letterSpacing: '-0.16px',
     borderRadius: '5px',
@@ -61,8 +58,12 @@ const styles = {
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],
     mr: ['0', null, null, '20px', '0'],
+    textDecoration: 'none',
+    transition: '2s',
     '&:hover': {
+      backgroundColor: '#6047BA',
       color: '#fff',
+      px: '5%',
     },
   },
   header: {

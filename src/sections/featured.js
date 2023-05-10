@@ -5,7 +5,9 @@ import BlockTitle from 'components/block-title';
 import Image from 'components/image';
 import { AiFillDollarCircle, AiFillPieChart } from 'react-icons/ai';
 import { FaBriefcase, FaCog } from 'react-icons/fa';
-import tabImage1 from 'assets/tab-image-1.png';
+import tabImage1 from 'assets/adjust.jpg';
+import tabImage4 from 'assets/report.jpg';
+import tabImage2 from 'assets/create.jpg';
 import dotPattern from 'assets/dot-pattern.svg';
 
 const Featured = () => {
@@ -56,13 +58,6 @@ const Featured = () => {
               Budget Overview
             </Button>
             <Button
-              onClick={() => handleTab('adjust')}
-              className={`${tab.active === 'adjust' ? 'active' : ''}`}
-            >
-              <FaCog />
-              Adjust
-            </Button>
-            <Button
               onClick={() => handleTab('report')}
               className={`${tab.active === 'report' ? 'active' : ''}`}
             >
@@ -83,13 +78,10 @@ const Featured = () => {
             <Image src={tabImage1} alt="tab image" className="tabImage" />
           )}
           {tab.active === 'create' && (
-            <Image src={tabImage1} alt="tab image" className="tabImage" />
-          )}
-          {tab.active === 'adjust' && (
-            <Image src={tabImage1} alt="tab image" className="tabImage" />
+            <Image src={tabImage2} alt="tab image" className="tabImage" />
           )}
           {tab.active === 'report' && (
-            <Image src={tabImage1} alt="tab image" className="tabImage" />
+            <Image src={tabImage4} alt="tab image" className="tabImage" />
           )}
         </Box>
       </Container>
@@ -192,6 +184,7 @@ const styles = {
     '.tabImage': {
       position: 'relative',
       animation: `${fadeIn} 0.8s linear`,
+      borderRadius: '3%',
     },
   },
 };

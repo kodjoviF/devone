@@ -1,27 +1,34 @@
-import React from 'react';
+import { Link } from 'components/link';
+import React, { useState } from 'react';
 import { Button, Input, Box, Container, Heading, Text } from 'theme-ui';
 
 const Subscribe = () => {
+
+  const [email, setEmail] = useState('');
+
+
+  console.log(email);
   return (
     <Box as="section" sx={styles.subscribe}>
-      <Container>
+      <Container
+        sx={{ 
+          display: ['flex'],
+          alignItems: 'center',
+          flexDirection: 'column'
+         }}
+      >
         <Heading as="h3">Send Us mail for more information</Heading>
-        <Text as="p">
-          By subscribing with your mail, you will accept our privacy policy
-        </Text>
         <Box as="form" sx={styles.form}>
-          <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
-            Email
-          </Box>
           <Input
-            placeholder="Enter your email"
+            placeholder="Enter your message"
             type="email"
             id="subscribeEmail"
             sx={styles.input}
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
           />
-          <Button type="submit" sx={styles.button}>
-            Subscribe us
-          </Button>
+
+          <a href={`mailto:devoneconsulting@gmail.com?subject=Prise de contact avec DevOne consulting&body=${email}`}>Send the mail</a>
         </Box>
       </Container>
     </Box>
@@ -44,6 +51,7 @@ const styles = {
       width: ['70%', null, null, 'auto'],
       mx: ['auto', null, null, '0'],
     },
+    
     p: {
       fontSize: ['16px'],
       color: '#fff',
@@ -57,11 +65,34 @@ const styles = {
   },
   form: {
     width: ['100%'],
-    maxWidth: ['555px'],
-    mx: ['auto'],
+    maxWidth: ['100%'],
+    flexDirection: 'row',
     display: ['flex'],
     flexWrap: ['wrap'],
     mt: ['30px', null, null, null, '60px'],
+    justifyContent: 'center',
+
+    a: {
+      display: 'flex',
+      backgroundColor: '#fff',
+      borderRadius: '5px',
+      fontWeight: '500',
+      fontSize: ['18px'],
+      color: '#020718',
+      letterSpacing: '-0.5px',
+      outline: 'none',
+      padding: ['0px 30.75px'],
+      minHeight: ['50px', null, null, '60px'],
+      width: ['100%', null, null, 'auto'],
+      mx: ['auto', null, null, '0'],
+      '&:hover': {
+        backgroundColor: '#fff',
+        opacity: '0.8',
+      },
+      textDecoration: 'none',
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
   },
   input: {
     width: ['100%'],
@@ -77,12 +108,25 @@ const styles = {
     mr: ['0px', null, null, '15px'],
     textAlign: ['center', null, null, 'left'],
   },
+  email :{
+    display: 'inline-block',
+    backgroundColor: 'blue',
+    color: 'white',
+    padding: '10px' ,
+    textAlign: 'center',
+    textDecoration: 'none',
+    borderRadius: '5px',
+  },
+  
+    
+  
   button: {
     backgroundColor: '#fff',
     borderRadius: '5px',
     fontWeight: '500',
     fontSize: ['18px'],
     color: '#020718',
+    textDecoration:'none',
     letterSpacing: '-0.5px',
     outline: 'none',
     padding: ['0px 30.75px'],
@@ -94,5 +138,7 @@ const styles = {
       backgroundColor: '#fff',
       opacity: '0.8',
     },
+    textDecoration: 'none'
   },
+
 };
